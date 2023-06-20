@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+/* font-family: 'Hanken Grotesk', sans-serif; */
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  width: 375px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 0 0 22px 22px;
+  align-items: center;
+  justify-content: center;
+}
+.header-heading {
+  color: hsl(241, 100%, 89%);
+}
+.header-number {
+  width: 150px;
+  height: 150px;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 20px; */
+  margin-top: 15px;
+}
+.header-number-first {
+  font-size: 60px;
+}
+.header-number-last {
+  font-size: 13px;
+  color: hsl(241, 100%, 89%);
+}
+.header-result {
+  color: hsl(0, 0%, 100%);
+  margin-top: 18px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.header-description {
+  width: 80%;
+  color: hsl(241, 100%, 89%);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.header-description-p {
+  display: block;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-top: 20px;
+}
+.bottom-summary {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.bottom-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 15px;
+  margin-top: 25px;
+}
+.bottom-description-reaction {
+  width: 100%;
+  display: flex;
+  background-color: rgba(225, 89, 89, 0.1);
+  color: red;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px 10px;
+}
+.bottom-description-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.bottom-description-memory {
+  width: 100%;
+  display: flex;
+  background-color: rgba(236, 165, 34, 0.1);
+  color: orange;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin-top: 20px;
+}
+.bottom-description-verbal {
+  width: 100%;
+  display: flex;
+  background-color: rgba(54, 210, 187, 0.1);
+  color: rgb(54, 210, 187);
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin-top: 20px;
+}
+.bottom-description-visual {
+  width: 100%;
+  display: flex;
+  background-color: rgba(9, 9, 243, 0.1);
+  color: blue;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin-top: 20px;
+}
+.bottom-description-span {
+  margin-left: 10px;
+}
+.bottom-description-numbers {
+  color: black;
+  font-weight: 800;
+}
+.bottom-btn {
+  width: 80%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+button {
+  border: none;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  width: 100%;
+  padding: 14px;
+  border-radius: 50px;
+}
+button:hover {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+@media only screen and (min-width: 1024px) {
+    body{
+        margin: 50px auto;
+        width: 1440px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        border-radius: 22px;
+        flex-direction: row;
+        width: 40%;
+        box-shadow: 20px 20px 50px rgba(45, 44, 44,0.2);
+    
+        
+ 
+    }
+    .header{
+        border-radius: 22px;
+        /* flex: 0.25; */
+        width: 50%;
+    }
+.bottom{
+    /* flex: 0.25; */
+    width: 50%;
+}
+  }
